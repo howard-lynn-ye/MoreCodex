@@ -1,0 +1,41 @@
+name: Source preview
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  windows-source:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: 1.4.0
+      - run: bun install --frozen-lockfile
+      - run: bun install --frozen-lockfile
+        working-directory: launcher
+      - run: bun run check-version
+      - run: bun run typecheck
+      - run: bun run launcher:typecheck
+      - run: bun run launcher:build
+      - name: Account, model and profile regression tests
+        run: >-
+          bun test tests/web-accounts.test.ts tests/web-accounts-v2.test.ts
+          tests/codex-integration-catalog.test.ts tests/configured-model-catalog.test.ts
+          tests/configured-model-selection.test.ts tests/configured-web-routing.test.ts
+          tests/web-model-availability.test.ts tests/web-model-guard-binding.test.ts
+          tests/external-browser.test.ts tests/external-browser-worker.test.ts
+          tests/http-accounts.test.ts tests/compaction-mcp-contract.test.ts tests/dev-profile.test.ts
+      - name: Launcher and Windows integration regression tests
+        run: >-
+          node --test launcher/tests/profile.test.cjs launcher/tests/update.test.cjs
+          launcher/tests/integration-safety.test.cjs launcher/tests/route-guard.test.cjs
+          launcher/tests/current-startup.test.cjs launcher/tests/current-manager-handshake.test.cjs
+          launcher/tests/runtime-deployment.test.cjs launcher/tests/independent-process.test.cjs
+          launcher/tests/packaging-contract.test.cjs

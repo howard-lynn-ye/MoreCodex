@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+<title id="title">MoreCodex token overflow icon</title>
+<desc id="desc">Electric-lime code tokens spilling from a dark terminal container.</desc>
+<defs>
+  <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#F0FFAD"/><stop offset=".5" stop-color="#D5FF54"/><stop offset="1" stop-color="#9FD733"/>
+  </linearGradient>
+  <linearGradient id="face" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#293830"/><stop offset="1" stop-color="#111B16"/>
+  </linearGradient>
+  <linearGradient id="side" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#547633"/><stop offset="1" stop-color="#18291A"/>
+  </linearGradient>
+  <linearGradient id="rim" x1="0" y1="1" x2="1" y2="0">
+    <stop stop-color="#96BF43"/><stop offset=".55" stop-color="#E1FF83"/><stop offset="1" stop-color="#74A733"/>
+  </linearGradient>
+  <radialGradient id="halo">
+    <stop stop-color="#C8FF4B" stop-opacity=".18"/><stop offset="1" stop-color="#C8FF4B" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="shadow" x="-40%" y="-35%" width="180%" height="200%">
+    <feDropShadow dx="0" dy="13" stdDeviation="11" flood-color="#000" flood-opacity=".34"/>
+  </filter>
+  <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+    <feGaussianBlur stdDeviation="14"/>
+  </filter></defs>
+<rect width="512" height="512" rx="108" fill="#0B0F0D"/>
+<circle cx="277" cy="226" r="218" fill="url(#halo)"/>
+<path d="M138 280 215 220 405 258 328 318Z" fill="#597D32" stroke="#A9CD5C" stroke-width="2"/>
+<path d="M160 278 219 241 381 265 325 301Z" fill="#0A140C"/>
+<g transform="translate(0 -7)">
+  <g transform="translate(176 192) rotate(-21)" filter="url(#shadow)">
+    <rect x="-38" y="-34" width="86" height="86" rx="17.2" fill="#668A2B"/>
+    <rect x="-43" y="-43" width="86" height="86" rx="17.2" fill="url(#tile)" stroke="#F2FFC9" stroke-width="1.4"/>
+    <rect x="-33.54" y="-33.54" width="67.08" height="67.08" rx="12.040000000000001" fill="none" stroke="#52711F" stroke-opacity=".22"/>
+    <text x="0" y="9.46" text-anchor="middle" font-family="Consolas, monospace" font-size="28.380000000000003" font-weight="700" fill="#16270E">&lt;/&gt;</text>
+    <text x="0" y="28.380000000000003" text-anchor="middle" font-family="Arial, sans-serif" font-size="8.17" font-weight="700" letter-spacing="2.15" fill="#3B501B">TOKEN</text>
+  </g>
+  <g transform="translate(305 113) rotate(17)" filter="url(#shadow)">
+    <rect x="-45" y="-41" width="100" height="100" rx="20" fill="#668A2B"/>
+    <rect x="-50" y="-50" width="100" height="100" rx="20" fill="url(#tile)" stroke="#F2FFC9" stroke-width="1.4"/>
+    <rect x="-39" y="-39" width="78" height="78" rx="14.000000000000002" fill="none" stroke="#52711F" stroke-opacity=".22"/>
+    <text x="0" y="11" text-anchor="middle" font-family="Consolas, monospace" font-size="33" font-weight="700" fill="#16270E">{}</text>
+    <text x="0" y="33" text-anchor="middle" font-family="Arial, sans-serif" font-size="9.5" font-weight="700" letter-spacing="2.5" fill="#3B501B">TOKEN</text>
+  </g>
+  <g transform="translate(360 235) rotate(24)" filter="url(#shadow)">
+    <rect x="-35" y="-31" width="80" height="80" rx="16" fill="#668A2B"/>
+    <rect x="-40" y="-40" width="80" height="80" rx="16" fill="url(#tile)" stroke="#F2FFC9" stroke-width="1.4"/>
+    <rect x="-31.200000000000003" y="-31.200000000000003" width="62.400000000000006" height="62.400000000000006" rx="11.200000000000001" fill="none" stroke="#52711F" stroke-opacity=".22"/>
+    <text x="0" y="8.8" text-anchor="middle" font-family="Consolas, monospace" font-size="26.400000000000002" font-weight="700" fill="#16270E">&gt;_</text>
+    <text x="0" y="26.400000000000002" text-anchor="middle" font-family="Arial, sans-serif" font-size="7.6" font-weight="700" letter-spacing="2" fill="#3B501B">TOKEN</text>
+  </g>
+  <g transform="translate(253 258) rotate(-13)" filter="url(#shadow)">
+    <rect x="-40.5" y="-36.5" width="91" height="91" rx="18.2" fill="#668A2B"/>
+    <rect x="-45.5" y="-45.5" width="91" height="91" rx="18.2" fill="url(#tile)" stroke="#F2FFC9" stroke-width="1.4"/>
+    <rect x="-35.49" y="-35.49" width="70.98" height="70.98" rx="12.740000000000002" fill="none" stroke="#52711F" stroke-opacity=".22"/>
+    <text x="0" y="10.01" text-anchor="middle" font-family="Consolas, monospace" font-size="30.03" font-weight="700" fill="#16270E">+</text>
+    <text x="0" y="30.03" text-anchor="middle" font-family="Arial, sans-serif" font-size="8.645" font-weight="700" letter-spacing="2.275" fill="#3B501B">TOKEN</text>
+  </g>
+</g>
+<path d="M138 280 328 318 308 449 122 411Z" fill="url(#face)" stroke="#526D42" stroke-width="2"/>
+<path d="M328 318 405 258 387 386 308 449Z" fill="url(#side)" stroke="#759A3E" stroke-width="2"/>
+<path d="m138 280 190 38 77-60" fill="none" stroke="url(#rim)" stroke-width="9" stroke-linejoin="round"/>
+<g transform="matrix(1 .20 -.1 1 167 322)">
+  <path d="m0 0 28 24L0 48m46 0h35" fill="none" stroke="#D5FF54" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g transform="translate(83 319) rotate(-27)" filter="url(#shadow)">
+    <rect x="-26" y="-22" width="62" height="62" rx="12.4" fill="#668A2B"/>
+    <rect x="-31" y="-31" width="62" height="62" rx="12.4" fill="url(#tile)" stroke="#F2FFC9" stroke-width="1.4"/>
+    <rect x="-24.18" y="-24.18" width="48.36" height="48.36" rx="8.680000000000001" fill="none" stroke="#52711F" stroke-opacity=".22"/>
+    <text x="0" y="6.82" text-anchor="middle" font-family="Consolas, monospace" font-size="20.46" font-weight="700" fill="#16270E">{}</text>
+    <text x="0" y="20.46" text-anchor="middle" font-family="Arial, sans-serif" font-size="5.89" font-weight="700" letter-spacing="1.55" fill="#3B501B">TOKEN</text>
+  </g>
+<g fill="#D5FF54">
+  <path d="M139 74h4v11h11v4h-11v11h-4V89h-11v-4h11z"/>
+  <path d="M416 151h4v10h10v4h-10v10h-4v-10h-10v-4h10z"/>
+  <circle cx="96" cy="230" r="4"/><circle cx="397" cy="95" r="3"/>
+</g>
+</svg>

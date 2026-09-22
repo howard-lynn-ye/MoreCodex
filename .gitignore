@@ -1,0 +1,64 @@
+node_modules/
+dist/
+.*.bun-build
+coverage/
+.DS_Store
+.env
+*.log
+*.pid
+*.sock
+*.key
+storage-state.json
+runtime/
+.launcher-runtime/
+launcher/build/
+launcher/release/
+launcher/artifacts/
+.playwright-cli/
+output/
+notes.md
+
+# Local authentication, account registries and deployment evidence
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.sqlite*
+*.db
+*.har
+*.jsonl
+*.backup*
+*.private.*
+auth.json
+accounts.json
+web-accounts.json
+http-accounts.json
+connection.json
+cookies*.json
+/trial/
+/current-integration/
+/downloads/
+/bridge-home/
+/launcher-data/
+/browser-data/
+/.local/
+
+# Private local workspaces, browser storage and continuation ownership
+/.codex/
+/.morecodex/
+/.morecodex-dev/
+/.ssh/
+/.npmrc
+*.response-owners.json
+*.dmp
+*.bak
+Login Data
+Login Data-journal
+Local State
+Cookies
+Cookies-journal
+Web Data
+Web Data-journal
+browser-profiles/
+private/
