@@ -16,7 +16,7 @@ MoreCodex brings supported ChatGPT Web models into your local Codex workflow. Pu
 
 **Why choose MoreCodex?** Keep multiple accounts ready, see which account each model belongs to, and choose the configured account/model for your next task. MoreCodex builds on codex-chatgpt-web with account management and Windows deployment and recovery helpers for people who want more control over their setup.
 
-*Tibo, pretty please give us a Codex RESET! 🙏*
+*Please TIBO, give us a RESET! 🙏*
 
 ## Let your agent install MoreCodex
 

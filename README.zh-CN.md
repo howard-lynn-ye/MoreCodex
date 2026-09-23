@@ -16,7 +16,7 @@ MoreCodex 将受支持的 ChatGPT 网页模型接入本地 Codex，让你把自�
 
 **为什么选择 MoreCodex？** 同时配置好多个账号，看清每个模型对应哪个账号，再为下一项任务选择要使用的账号和模型。MoreCodex 在 codex-chatgpt-web 的基础上增加账号管理，以及 Windows 部署和恢复工具，适合希望更灵活地管理自己配置的用户。
 
-*Tibo，求求了，给我们来个 Codex 额度 RESET 吧！🙏*
+*求求了 TIBO 给个 RESET 吧！🙏*
 
 ## 让你的 Agent 替你安装 MoreCodex
 
