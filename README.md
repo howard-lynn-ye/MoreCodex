@@ -6,11 +6,13 @@ Put your available ChatGPT capacity to work in Codex.
 
 ![MoreCodex — GET MORE TOKENS. BUILD MORE. Code tokens overflow from a terminal container.](assets/morecodex-token-poster.png)
 
-[简体中文](README.zh-CN.md) · [Why MoreCodex](#why-morecodex) · [Account setup](docs/web-accounts.md) · [Preview status](docs/preview-status.md) · [Contributing](CONTRIBUTING.md)
+[简体中文](README.zh-CN.md) · [Why MoreCodex](#why-morecodex) · [Compare with upstream](#morecodex-vs-codex-chatgpt-web) · [Account setup](docs/web-accounts.md) · [Preview status](docs/preview-status.md) · [Contributing](CONTRIBUTING.md)
 
 MoreCodex brings supported ChatGPT Web models into your local Codex workflow. Put available usage from accounts you control to work on coding, debugging, code review and documentation, with local tools available through a configured connector.
 
 **The benefit: more usable AI capacity in Codex.** When an eligible ChatGPT account and model still have capacity, MoreCodex gives you a way to use that access for development in Codex. You get more choice about where your next task runs and more value from the access you already have.
+
+**Why choose MoreCodex?** Keep multiple accounts ready, see which account each model belongs to, and choose the configured account/model for your next task. MoreCodex builds on codex-chatgpt-web with account management and Windows deployment and recovery helpers for people who want more control over their setup.
 
 *Tibo, pretty please give us a Codex RESET! 🙏*
 
@@ -27,6 +29,19 @@ MoreCodex brings supported ChatGPT Web models into your local Codex workflow. Pu
 
 This is especially useful when you already have eligible ChatGPT access you want to use for development, work across several accounts you control, or want to try different supported models on the same local project.
 
+## MoreCodex vs. codex-chatgpt-web
+
+The original [codex-chatgpt-web](https://github.com/miuuyy/codex-chatgpt-web) provides the Web-to-Codex bridge, streaming and local tool connection. MoreCodex builds on that foundation. The comparison below describes additions to the [v5.0.6 source snapshot we imported](https://github.com/miuuyy/codex-chatgpt-web/tree/e85e3693fdb4e3e033348c08df0298c20fcdb612); later upstream releases may differ.
+
+| Workflow | Upstream v5.0.6 baseline | What MoreCodex adds for you |
+| --- | --- | --- |
+| **Keep multiple accounts ready** | A configured browser host and session for the bridge. | Enroll multiple accounts with independent configuration and saved Web sessions. Keep eligible accounts available without repeatedly replacing the desktop's main login. |
+| **Choose the account behind a model** | Shared ChatGPT Web model presets and catalogue metadata. | Account-labelled entries from enrolled catalogues, plus configurable model definitions. Distinguish the same model across accounts and select the binding you intend to use. |
+| **Check the account and workspace** | Browser and model checks for the configured session. | Bind requests to the enrolled account, workspace and model; reject mismatches and missing per-account tool settings. Make the selected account part of request validation. |
+| **Manage an existing Windows installation** | Launcher lifecycle and installation tooling. | Additional manifest checks, deployment backups, rollback and startup/route ownership helpers. Review a runtime change and keep a defined path back to the previous setup. |
+
+**Choose this preview when you want several accounts and their models available in one Codex workflow, with explicit control over where each new task runs.** Account setup is currently CLI-based, and every account/model needs a real request to verify it. The Windows helpers require an existing managed installation. See the [account guide](docs/web-accounts.md), [deployment helper](scripts/deploy-current-runtime.cjs) and [preview status](docs/preview-status.md) for setup and current coverage.
+
 ## How you can get more work done
 
 For example, suppose your usual Codex route has reached its limit, while an enrolled ChatGPT Web model is still available for use. After configuring and verifying that route, select its labelled model in Codex and start your next task in the same project: review a change, investigate a bug, or write documentation. That available access can now support work in your Codex workflow.
@@ -34,10 +49,6 @@ For example, suppose your usual Codex route has reached its limit, while an enro
 You choose the account and model explicitly. Switching routes does not automatically transfer an in-progress conversation between accounts. See the [account guide](docs/web-accounts.md) for setup and verification.
 
 **How usage works:** MoreCodex makes existing eligible capacity usable through additional routes; it does not increase an account's official quota, pool limits or promise a fixed multiplier. Actual capacity depends on the selected account, model and service. Some services share limits: OpenAI documents shared usage for ChatGPT Work and Codex in its [official usage guidance](https://learn.chatgpt.com/docs/pricing). Check your account's current limits rather than assuming every route adds a separate allowance.
-
-## What MoreCodex adds
-
-MoreCodex extends [codex-chatgpt-web](https://github.com/miuuyy/codex-chatgpt-web) with independent account management, account-bound model catalogues, model/workspace checks, and Windows deployment and recovery helpers. It retains the upstream Responses bridge, streaming and task-bound MCP tool flow, with additional session and compaction handling.
 
 ## Run the development launcher
 

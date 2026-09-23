@@ -6,11 +6,13 @@
 
 ![MoreCodex — GET MORE TOKENS. BUILD MORE. 代码形状的 TOKEN 从终端容器中涌出。](assets/morecodex-token-poster.png)
 
-[English](README.md) · [账号配置](docs/web-accounts.md) · [预览版状态](docs/preview-status.md)
+[English](README.md) · [为什么使用 MoreCodex](#为什么使用-morecodex) · [与原项目对比](#morecodex-与-codex-chatgpt-web-的区别) · [账号配置](docs/web-accounts.md) · [预览版状态](docs/preview-status.md)
 
 MoreCodex 将受支持的 ChatGPT 网页模型接入本地 Codex，让你把自己账号中仍可使用的额度用于编程、排查问题、代码审查和文档编写；配置好连接器后，还能调用授权的本地工具。
 
 **核心收益：让 Codex 能利用更多已有的可用额度，完成更多工作。** 当你有权限使用的 ChatGPT 账号和模型仍有余量时，MoreCodex 提供了一条在 Codex 中使用这些资源的途径，让下一项任务有更多选择，也让已有的访问权限发挥更大价值。
+
+**为什么选择 MoreCodex？** 同时配置好多个账号，看清每个模型对应哪个账号，再为下一项任务选择要使用的账号和模型。MoreCodex 在 codex-chatgpt-web 的基础上增加账号管理，以及 Windows 部署和恢复工具，适合希望更灵活地管理自己配置的用户。
 
 *Tibo，求求了，给我们来个 Codex 额度 RESET 吧！🙏*
 
@@ -27,6 +29,19 @@ MoreCodex 将受支持的 ChatGPT 网页模型接入本地 Codex，让你把自�
 
 如果你已有可用于开发的 ChatGPT 访问权限、需要管理多个自己的账号，或者希望在同一个本地项目中尝试不同受支持的模型，这些功能尤其有用。
 
+## MoreCodex 与 codex-chatgpt-web 的区别
+
+原项目 [codex-chatgpt-web](https://github.com/miuuyy/codex-chatgpt-web) 提供了网页模型接入 Codex、流式输出和本地工具连接，MoreCodex 在这些基础上继续扩展。下表对比的是我们采用的 [v5.0.6 源码快照](https://github.com/miuuyy/codex-chatgpt-web/tree/e85e3693fdb4e3e033348c08df0298c20fcdb612)；上游后续版本可能已有变化。
+
+| 使用场景 | 上游 v5.0.6 基线 | MoreCodex 新增功能及实际好处 |
+| --- | --- | --- |
+| **同时准备好多个账号** | 为桥接配置浏览器和会话。 | 登记多个账号，分别保留配置和网页登录会话，减少反复替换桌面主登录的操作，让有权限使用的账号保持可选。 |
+| **选择模型对应的账号** | 共用的 ChatGPT 网页模型预设和目录信息。 | 根据已登记的账号目录生成带账号标签的模型条目，并支持配置模型定义。同名模型也能按账号区分，方便选择实际要使用的绑定。 |
+| **核对账号和工作区** | 对已配置会话进行浏览器与模型检查。 | 将请求绑定到已登记的账号、工作区和模型，发现不匹配或缺少独立工具配置时明确报错，把账号选择纳入请求校验。 |
+| **管理已有的 Windows 安装** | 启动器运行管理和安装工具。 | 增加运行包清单校验、部署备份、回滚，以及启动和路由归属检查；便于检查运行环境改动，并保留恢复到原配置的路径。 |
+
+**如果你希望在同一个 Codex 工作流中使用多个账号及其模型，并明确控制每项新任务交给哪个账号，这个预览版就值得尝试。** 目前账号配置通过命令行完成，每个账号和模型都需要真实请求验证；Windows 管理工具要求已有受管理的安装环境。配置方法和已验证范围见[账号指南](docs/web-accounts.md)、[部署工具](scripts/deploy-current-runtime.cjs)和[预览版状态](docs/preview-status.md)。
+
 ## 如何让 Codex 完成更多工作
 
 举个例子：你常用的 Codex 渠道已经达到用量上限，但某个已登记的 ChatGPT 网页模型仍可使用。完成该渠道的配置和验证后，就可以在 Codex 中选择带有对应账号标签的模型，在同一项目里开始下一项任务，例如审查改动、排查报错或补充文档。原本可用的访问权限，就能继续服务于你的 Codex 工作流。
@@ -34,10 +49,6 @@ MoreCodex 将受支持的 ChatGPT 网页模型接入本地 Codex，让你把自�
 账号和模型由你明确选择；切换渠道不会自动将正在进行的对话转移到另一个账号。具体操作见[账号配置指南](docs/web-accounts.md)。
 
 **额度说明：** MoreCodex 通过额外渠道利用已有的可用资源，不修改官方额度、不合并上限，也不承诺固定增加几倍。实际余量取决于所选账号、模型和服务；部分服务共用额度，例如 OpenAI 的[官方用量说明](https://learn.chatgpt.com/docs/pricing)明确说明 ChatGPT Work 与 Codex 共用用量。请以账号当前显示的额度为准，不要把每个渠道都当成独立的新额度。
-
-## MoreCodex 增加了什么
-
-MoreCodex 基于 [codex-chatgpt-web](https://github.com/miuuyy/codex-chatgpt-web)，增加了独立账号管理、按账号生成的模型目录、模型与工作区校验，以及 Windows 部署、回滚和启动恢复工具；同时保留上游 Responses 桥接、流式输出和 MCP 工具链，并扩展会话与压缩处理。
 
 ## 从源码打开开发界面
 
