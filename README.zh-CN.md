@@ -6,7 +6,7 @@
 
 **为编程 Agent 的工作流而设计，让你的 Agent 替你安装 MoreCodex。** 把这个仓库交给能使用本地终端的 Agent，直接复制[下方安装提示词](#让你的-agent-替你安装-morecodex)。
 
-![MoreCodex — GET MORE TOKENS. BUILD MORE. 代码形状的 TOKEN 从终端容器中涌出。](assets/morecodex-token-poster.png)
+![MoreCodex — More ChatGPT. More Codex. 通过 MoreCodex 连接 ChatGPT 与 Codex 的界面示意图。](assets/morecodex-chatgpt-codex-poster-v2.png)
 
 [English](README.md) · [让 Agent 安装](#让你的-agent-替你安装-morecodex) · [为什么使用 MoreCodex](#为什么使用-morecodex) · [与原项目对比](#morecodex-与-codex-chatgpt-web-的区别) · [账号配置](docs/web-accounts.md) · [预览版状态](docs/preview-status.md)
 

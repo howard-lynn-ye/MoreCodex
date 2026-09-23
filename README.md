@@ -6,7 +6,7 @@ Put your available ChatGPT capacity to work in Codex.
 
 **Built for coding agents. Let your agent install MoreCodex for you.** Give this repository to an agent with local terminal access and use the [installation prompt below](#let-your-agent-install-morecodex).
 
-![MoreCodex — GET MORE TOKENS. BUILD MORE. Code tokens overflow from a terminal container.](assets/morecodex-token-poster.png)
+![MoreCodex — More ChatGPT. More Codex. ChatGPT and Codex interfaces connected through MoreCodex.](assets/morecodex-chatgpt-codex-poster-v2.png)
 
 [简体中文](README.zh-CN.md) · [Install with your agent](#let-your-agent-install-morecodex) · [Why MoreCodex](#why-morecodex) · [Compare with upstream](#morecodex-vs-codex-chatgpt-web) · [Account setup](docs/web-accounts.md) · [Preview status](docs/preview-status.md) · [Contributing](CONTRIBUTING.md)
 
