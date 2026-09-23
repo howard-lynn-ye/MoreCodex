@@ -4,9 +4,11 @@
 
 用好已有的 ChatGPT 可用额度，让 Codex 火力全开。
 
+**为编程 Agent 的工作流而设计，让你的 Agent 替你安装 MoreCodex。** 把这个仓库交给能使用本地终端的 Agent，直接复制[下方安装提示词](#让你的-agent-替你安装-morecodex)。
+
 ![MoreCodex — GET MORE TOKENS. BUILD MORE. 代码形状的 TOKEN 从终端容器中涌出。](assets/morecodex-token-poster.png)
 
-[English](README.md) · [为什么使用 MoreCodex](#为什么使用-morecodex) · [与原项目对比](#morecodex-与-codex-chatgpt-web-的区别) · [账号配置](docs/web-accounts.md) · [预览版状态](docs/preview-status.md)
+[English](README.md) · [让 Agent 安装](#让你的-agent-替你安装-morecodex) · [为什么使用 MoreCodex](#为什么使用-morecodex) · [与原项目对比](#morecodex-与-codex-chatgpt-web-的区别) · [账号配置](docs/web-accounts.md) · [预览版状态](docs/preview-status.md)
 
 MoreCodex 将受支持的 ChatGPT 网页模型接入本地 Codex，让你把自己账号中仍可使用的额度用于编程、排查问题、代码审查和文档编写；配置好连接器后，还能调用授权的本地工具。
 
@@ -15,6 +17,25 @@ MoreCodex 将受支持的 ChatGPT 网页模型接入本地 Codex，让你把自�
 **为什么选择 MoreCodex？** 同时配置好多个账号，看清每个模型对应哪个账号，再为下一项任务选择要使用的账号和模型。MoreCodex 在 codex-chatgpt-web 的基础上增加账号管理，以及 Windows 部署和恢复工具，适合希望更灵活地管理自己配置的用户。
 
 *Tibo，求求了，给我们来个 Codex 额度 RESET 吧！🙏*
+
+## 让你的 Agent 替你安装 MoreCodex
+
+MoreCodex 面向本地编程 Agent 的工作流。你的 Agent 可以阅读安装指南、检查环境、准备依赖，并替你启动源码预览版。**把下面这段话直接发给你的编程 Agent：**
+
+```text
+请帮我安装和配置 MoreCodex：https://github.com/howard-lynn-ye/MoreCodex。
+先阅读 README.zh-CN.md、docs/agent-install.md 和 docs/preview-status.md。
+检查我的操作系统和现有环境，使用项目要求的 Bun 版本，
+通过本地终端按文档完成源码预览版的安装步骤。
+保留我现有的 Codex 配置和本地工作。
+再按照 docs/web-accounts.md 帮我配置有权限使用的账号和模型；
+账号登录以及浏览器、连接器授权由我本人完成。
+验证启动器正常运行；配置完成后，再验证一次真实模型回复和一次
+已授权的本地工具操作。告诉我哪些步骤已成功、还缺什么。
+不要把凭据、浏览器资料或私有日志提交到 Git，也不要在报告中显示它们。
+```
+
+[Agent 安装指南](docs/agent-install.md)提供具体命令和完成检查。当前发布的是源码预览版，先启动独立开发环境，再完成账号登录、连接器授权和真实模型／工具调用验证，就能确认实际任务所需的配置是否就绪。
 
 ## 为什么使用 MoreCodex
 

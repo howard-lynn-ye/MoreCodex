@@ -4,9 +4,11 @@
 
 Put your available ChatGPT capacity to work in Codex.
 
+**Built for coding agents. Let your agent install MoreCodex for you.** Give this repository to an agent with local terminal access and use the [installation prompt below](#let-your-agent-install-morecodex).
+
 ![MoreCodex — GET MORE TOKENS. BUILD MORE. Code tokens overflow from a terminal container.](assets/morecodex-token-poster.png)
 
-[简体中文](README.zh-CN.md) · [Why MoreCodex](#why-morecodex) · [Compare with upstream](#morecodex-vs-codex-chatgpt-web) · [Account setup](docs/web-accounts.md) · [Preview status](docs/preview-status.md) · [Contributing](CONTRIBUTING.md)
+[简体中文](README.zh-CN.md) · [Install with your agent](#let-your-agent-install-morecodex) · [Why MoreCodex](#why-morecodex) · [Compare with upstream](#morecodex-vs-codex-chatgpt-web) · [Account setup](docs/web-accounts.md) · [Preview status](docs/preview-status.md) · [Contributing](CONTRIBUTING.md)
 
 MoreCodex brings supported ChatGPT Web models into your local Codex workflow. Put available usage from accounts you control to work on coding, debugging, code review and documentation, with local tools available through a configured connector.
 
@@ -15,6 +17,25 @@ MoreCodex brings supported ChatGPT Web models into your local Codex workflow. Pu
 **Why choose MoreCodex?** Keep multiple accounts ready, see which account each model belongs to, and choose the configured account/model for your next task. MoreCodex builds on codex-chatgpt-web with account management and Windows deployment and recovery helpers for people who want more control over their setup.
 
 *Tibo, pretty please give us a Codex RESET! 🙏*
+
+## Let your agent install MoreCodex
+
+MoreCodex is designed for local coding-agent workflows. Your agent can read the setup guide, check your environment, prepare dependencies and launch the source preview for you. **Copy this prompt into your coding agent:**
+
+```text
+Set up MoreCodex for me from https://github.com/howard-lynn-ye/MoreCodex.
+Read README.md, docs/agent-install.md and docs/preview-status.md first.
+Check my OS and existing setup, use the required Bun version, and follow
+the documented source-preview installation steps with local terminal tools.
+Preserve my existing Codex configuration and any local work.
+Help configure an eligible account/model using docs/web-accounts.md;
+I will complete sign-in and any browser or connector approval myself.
+Verify the launcher, then a real model reply and one authorized local tool
+operation when configured. Report what works and any remaining setup steps.
+Keep credentials, browser profiles and private logs out of Git and your report.
+```
+
+The [agent installation guide](docs/agent-install.md) gives the agent the commands and completion checks. This release provides a source preview; launching its separate development profile is the first step. Account login, connector permissions and a verified model/tool request complete the setup for actual tasks.
 
 ## Why MoreCodex
 
